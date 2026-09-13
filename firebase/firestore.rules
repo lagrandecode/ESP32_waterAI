@@ -1,0 +1,15 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Drink events written by the ESP32, read by the Flutter app.
+    // Both sign in anonymously, so any authenticated client works.
+    match /water_events/{eventId} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null
+                    && request.resource.data.keys().hasAll(['ts', 'device'])
+                    && request.resource.data.ts is timestamp
+                    && request.resource.data.device is string;
+      allow update, delete: if false;  // history is append-only
+    }
+  }
+}

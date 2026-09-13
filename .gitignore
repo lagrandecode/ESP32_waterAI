@@ -1,0 +1,84 @@
+# ---- Secrets (never commit) ----
+include/secrets.h
+firebase/appconfig/
+
+# ---- PlatformIO / ESP32 ----
+.pio/
+.venv/
+*.bin
+*.elf
+*.map
+
+# ---- Flutter / Dart ----
+app/.dart_tool/
+app/.flutter-plugins
+app/.flutter-plugins-dependencies
+app/.packages
+app/.pub-cache/
+app/.pub/
+app/build/
+app/coverage/
+app/**/doc/api/
+app/**/ios/Flutter/.last_build_id
+app/**/*.symbols
+app/**/*.map.json
+app/android/app/debug
+app/android/app/profile
+app/android/app/release
+
+# CocoaPods / Xcode
+app/ios/Pods/
+app/ios/.symlinks/
+app/ios/Flutter/Flutter.framework
+app/ios/Flutter/Flutter.podspec
+app/ios/Flutter/Generated.xcconfig
+app/ios/Flutter/ephemeral/
+app/ios/Flutter/app.flx
+app/ios/Flutter/app.zip
+app/ios/Flutter/flutter_assets/
+app/ios/Flutter/flutter_export_environment.sh
+app/ios/ServiceDefinitions.json
+app/ios/Runner/GeneratedPluginRegistrant.*
+**/xcuserdata/
+**/DerivedData/
+*.xcuserstate
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+# Android local
+app/android/local.properties
+app/android/.gradle/
+app/android/captures/
+app/android/key.properties
+*.jks
+*.keystore
+
+# ---- IDE / OS ----
+.idea/
+*.iml
+.vscode/
+*.swp
+*~
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# ---- Logs / misc ----
+*.log
+*.class
+*.pyc
+__pycache__/
+.env
+.env.*
+!.env.example
