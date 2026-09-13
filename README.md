@@ -2,6 +2,18 @@
 
 ESP32 Cheap Yellow Display water reminder with cloud sync and a Flutter companion app (GitHub-style heatmap).
 
+<p align="center">
+  <img src="docs/esp32-device.jpg" alt="ESP32 Water AI device" width="420" />
+</p>
+
+<p align="center"><em>ESP32 Cheap Yellow Display — countdown, animated glass, DRINK NOW</em></p>
+
+<p align="center">
+  <img src="docs/flutter-heatmap.png" alt="Water AI Flutter heatmap" width="280" />
+</p>
+
+<p align="center"><em>Flutter companion app — live count, streak, and GitHub-style heatmap</em></p>
+
 ## Hardware
 
 - ESP32-2432S028R ("Cheap Yellow Display") — 2.8" ILI9341 + resistive touch
